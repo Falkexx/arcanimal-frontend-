@@ -5,7 +5,11 @@ export default {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        'custom-x': '6rem', // Define um padding horizontal personalizado de 6rem (96px)
+      },
+    },
   },
   plugins: [],
-}
+};
