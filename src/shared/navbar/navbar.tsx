@@ -13,8 +13,8 @@ function Navbar() {
     }
 
     return (
-        <header className="Header px-custom-x py-[21px] flex justify-between items-center bg-white py-4 z-10 shadow-sm">
-            <nav className="flex justify-between w-full px-4">
+        <header className="Header padding-x py-[21px] flex justify-between items-center bg-white py-4 z-10 shadow-sm">
+            <nav className="flex justify-between w-full">
 
                 {/* LOGO */}
                 <section className="flex gap-2 items-center">
