@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.dog {
+    background-image: url(../../../../assets/img/banner-img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+@media screen and (max-width: 768px){
+    .buttom mobile{
+        padding-top: 10rem;
+        max-width: 50%;
+    }
+    .w-mobile{
+        width: 100%!important;
+    }
+}
+.extra-padding{
+    padding-top: 0rem;
+}
+
+.banner-container {
+    min-height: 90dvh;
+    max-height: 800px;
+
+    @media screen and (max-width: 768px){
+        min-height: 55dvh;
+        .extra-padding{
+            padding-top: 10rem;
+        }
+    }
+}
+
+.font-family{
+    font-family: Poppins, sans-serif;
+    line-height: 1.2;
+}
+
+.title-color {
+    color: #020080;
+}
+
+.title-size {
+    font-size: 50px;
+    letter-spacing: normal;
+    word-spacing: normal;
+
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.btn-orange {
+    color: #020080;
+    background-color: #FFA500;
+}
+
+.bg-color {
+    background-color: #020080;
+}
+
+.padding-x {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    
+    @media screen and (max-width: 1024px) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    @media screen and (max-width: 768px) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.h-13 {
+    height: 3.25rem;
+}
+
