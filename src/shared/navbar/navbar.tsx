@@ -25,9 +25,6 @@ function Navbar() {
 
                 {/* MOBILE MENU BUTTON */}
 
-
-
-
                 {/* NAVBAR */}
                 <div className="block lg:flex lg:ml-20 mt-3 lg:mt-0">
                     <section className="flex flex-col md:flex-row justify-end gap-3 flex-grow">
