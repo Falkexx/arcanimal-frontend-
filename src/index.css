@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+
+  .CredentialInputStyle {
+
+    width: 100%;
+    display: block;
+    color: black;
+    border-radius: 5px;
+
+  }
+
+  .CredentialLabelStyle {
+    font-weight: bolder;
+    font-size: medium;
+
+  }
+}
