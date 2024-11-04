@@ -7,7 +7,7 @@ Bem-vindo ao **Ao projeto Front-end da Arcanimal**! É um prazer ter você ao la
 - [Visão Geral](#-visão-geral)
 - [Recursos](#-recursos)
 - [Instalação](#-instalação)
-- [Uso](#-uso)
+- [Gui da arquitetura de pastas](#-Arquitetura-de-pastas-Guia)
 - [Scripts Disponíveis](#-scripts-disponíveis)
 - [Contribuindo](#-contribuindo)
 
@@ -46,6 +46,14 @@ Siga as instruções abaixo para configurar e rodar o projeto localmente.
     npm start
     
 4. Abra http://localhost:3000 para visualizar no navegador.
+
+## 📝 Arquitetura de pastas - Guia
+
+Para arquitetura de pastas, foi utilizado este artigo como parâmetro:
+
+https://www.treinaweb.com.br/blog/estrutura-de-pastas-e-arquivos-com-react
+
+Vale a pena dar uma olhada, caso você fique confuso(a) vendo elas.
 
 ## 📜 Scripts Disponíveis
 
