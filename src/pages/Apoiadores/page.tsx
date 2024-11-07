@@ -2,7 +2,6 @@ import Navbar from "../../shared/navbar/navbar";
 import ShowPartners from "../../shared/ShowPartners";
 
 function Apoiadores() {
-
   return (
     <>
       <Navbar />

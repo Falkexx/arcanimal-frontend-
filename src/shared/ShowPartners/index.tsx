@@ -1,9 +1,9 @@
 import { PartnersProps } from "../../data/utils/PartnersTypes";
-import petsRsLogo from '../../assets/img/ApoiadoresLogos/petsrs.png'
-import gradLogo from '../../assets/img/ApoiadoresLogos/grad-logo.png'
-import animalTag from '../../assets/img/ApoiadoresLogos/animaltag.png'
-import rsGov from '../../assets/img/ApoiadoresLogos/gov.png'
-import dogGoods from '../../assets/img/ApoiadoresLogos/doggoodslogo.png'
+import petsRsLogo from "../../assets/img/ApoiadoresLogos/petsrs.png";
+import gradLogo from "../../assets/img/ApoiadoresLogos/grad-logo.png";
+import animalTag from "../../assets/img/ApoiadoresLogos/animaltag.png";
+import rsGov from "../../assets/img/ApoiadoresLogos/gov.png";
+import dogGoods from "../../assets/img/ApoiadoresLogos/doggoodslogo.png";
 
 function ShowPartners() {
   const Apoiadores: PartnersProps = {
@@ -61,7 +61,7 @@ function ShowPartners() {
   };
 
   return (
-    <section className="w-full">
+    <section className="w-[357px] h-[327px] m-5">
       {Apoiadores.tipos.map((e) => {
         return (
           <article>
@@ -75,14 +75,8 @@ function ShowPartners() {
             </div>
 
             <div>
-
-              {e.Funcao.map((e)=>{
-
-                return(
-                  <div className="bg-blue-800">
-                    {e}
-                  </div>
-                )
+              {e.Funcao.map((e) => {
+                return <div className="bg-blue-800">{e}</div>;
               })}
             </div>
           </article>
