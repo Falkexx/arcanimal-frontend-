@@ -1,3 +1,5 @@
+import Tags from "../Tags";
+
 type CardProps = {
   width: string;
   height: string;
@@ -9,7 +11,8 @@ type CardProps = {
   name?: string;
   content?: string;
   img?: string;
-  tags?: string;
+  linkUrl?: string;
+  tags?: string[];
 };
 
 const Card = ({
@@ -23,15 +26,15 @@ const Card = ({
   name,
   content,
   img,
-  tags,
+  linkUrl,
+  tags = [],
 }: CardProps) => {
-  const borderClass = hasBorder ? `border border-${borderColor}` : "";
+  const borderClass = hasBorder ? `border ${borderColor}` : "";
   const bgClass = bg ? `bg-${bg}` : "bg-transparent";
-  const heightClass = height ? `h-${height}` : "h-auto";
 
   return (
     <div
-      className={`${borderClass} ${bgClass} ${heightClass}`}
+      className={`${borderClass} ${bgClass} flex justify-center items-center flex-col `}
       style={{
         borderColor,
         paddingLeft: `${px}`,
@@ -45,10 +48,16 @@ const Card = ({
         borderRadius: "10px",
       }}
     >
-      <h2>{name}</h2>
-      <p>{content}</p>
-      <img src="" alt="" />
-      <span>{tags}</span>
+      <h2 className="mb-2 text-custom-gray text-lg font-medium">{name}</h2>
+      <p className="text-sm ">{content}</p>
+      <a href={linkUrl} target="blank" className="my-6">
+        <img src={img} alt={name} className="max-h-[100px]" />
+      </a>
+      <span>
+        {tags.map((tag) => (
+          <Tags content={[tag]} key={tag} />
+        ))}
+      </span>
     </div>
   );
 };

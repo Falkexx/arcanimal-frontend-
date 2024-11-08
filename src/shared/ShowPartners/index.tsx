@@ -14,7 +14,7 @@ function ShowPartners() {
         Description:
           "Portal criado por voluntários para ajudar no reencontro de pets.",
         ImgUrl: petsRsLogo,
-        Funcao: ["Divulgação", "Conexão"],
+        tag: ["Divulgação", "Conexão"],
         width: null,
         height: null,
         LinkUrl: "https://petsrs.com.br/",
@@ -24,7 +24,7 @@ function ShowPartners() {
         Description:
           "Suporte técnico para o Estado através do Gabinete de Coordenação da Fauna.",
         ImgUrl: gradLogo,
-        Funcao: ["Suporte técnico"],
+        tag: ["Suporte técnico"],
         width: null,
         height: null,
         LinkUrl: "https://gradbrasil.org.br/",
@@ -34,7 +34,7 @@ function ShowPartners() {
         Description:
           "Fornece um aplicativo para o cadastro dos animais microchipados.",
         ImgUrl: animalTag,
-        Funcao: ["Divulgação", "Conexão"],
+        tag: ["Divulgação", "Conexão"],
         width: "12rem",
         height: "6rem",
         LinkUrl: "https://www.animalltag.net/",
@@ -44,7 +44,7 @@ function ShowPartners() {
         Description:
           "Coordena o Gabinete de Coordenação da Fauna através da SEMA",
         ImgUrl: rsGov,
-        Funcao: ["Suporte técnico"],
+        tag: ["Suporte técnico"],
         width: null,
         height: null,
         LinkUrl: "https://sosenchentes.rs.gov.br/assistencia-para-animais",
@@ -55,7 +55,7 @@ function ShowPartners() {
         ImgUrl: dogGoods,
         width: "10rem",
         height: "6rem",
-        Funcao: ["Doação de petiscos"],
+        tag: ["Doação de petiscos"],
         LinkUrl: "https://www.doggoods.com.br/",
       },
     ],
@@ -64,16 +64,21 @@ function ShowPartners() {
   return (
     <>
       {Apoiadores.tipos.map((apoiador) => (
-        <Card
-          width="360px"
-          height="330px"
-          hasBorder={true}
-          borderColor="#E0E6ED"
-          px="32px"
-          py="12px"
-          name={apoiador.Instituicao}
-          content={apoiador.Description}
-        />
+        <div className="mr-4 mb-4 flex-wrap " key={apoiador.Instituicao}>
+          <Card
+            width="360px"
+            height="330px"
+            hasBorder={true}
+            borderColor="border-border-color"
+            px="12px"
+            py="32px"
+            name={apoiador.Instituicao}
+            content={apoiador.Description}
+            img={apoiador.ImgUrl}
+            linkUrl={apoiador.LinkUrl}
+            tags={apoiador.tag}
+          />
+        </div>
       ))}
     </>
     // <section className="w-[357px] h-[327px]">
@@ -90,7 +95,7 @@ function ShowPartners() {
     //         </div>
 
     //         <div>
-    //           {e.Funcao.map((e) => {
+    //           {e.tag.map((e) => {
     //             return <div className="bg-blue-800">{e}</div>;
     //           })}
     //         </div>

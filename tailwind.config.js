@@ -20,7 +20,8 @@ const tailwindConfig = {
       },
       colors: {
         'default-blue': '#020080',
-        // 'border-color': '#E0E6ED',
+        'border-color': '#E0E6ED',
+        'custom-gray': '#3b3f5c'
       },
     },
   },

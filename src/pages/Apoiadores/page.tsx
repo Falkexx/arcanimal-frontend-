@@ -1,4 +1,3 @@
-import Card from "../../shared/Card";
 import Navbar from "../../shared/navbar/navbar";
 import ShowPartners from "../../shared/ShowPartners";
 
@@ -11,11 +10,11 @@ function Apoiadores() {
           <h1 className="font-medium leading-10 text-2xl-custom text-default-blue">
             Parceiros
           </h1>
-          <h2 className="leading-7 text-xl text-default-blue my-[14px] ">
+          <h2 className="leading-7 text-xl text-default-blue my-[14px] font-medium ">
             Veja quem está nos apoiando
           </h2>
         </article>
-        <section className="">
+        <section className="flex flex-wrap">
           <ShowPartners />
         </section>
       </div>
