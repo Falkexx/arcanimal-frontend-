@@ -10,12 +10,18 @@
     display: block;
     color: black;
     border-radius: 5px;
-
   }
 
   .CredentialLabelStyle {
     font-weight: bolder;
     font-size: medium;
+
+  }
+
+  .BaseFont{
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 
   }
 }
