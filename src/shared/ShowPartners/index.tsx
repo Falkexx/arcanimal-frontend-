@@ -4,6 +4,7 @@ import gradLogo from "../../assets/img/ApoiadoresLogos/grad-logo.png";
 import animalTag from "../../assets/img/ApoiadoresLogos/animaltag.png";
 import rsGov from "../../assets/img/ApoiadoresLogos/gov.png";
 import dogGoods from "../../assets/img/ApoiadoresLogos/doggoodslogo.png";
+import Card from "../Card";
 
 function ShowPartners() {
   const Apoiadores: PartnersProps = {
@@ -61,28 +62,42 @@ function ShowPartners() {
   };
 
   return (
-    <section className="w-[357px] h-[327px] m-5">
-      {Apoiadores.tipos.map((e) => {
-        return (
-          <article>
-            <div>
-              <h1>{e.Instituicao}</h1>
-              <p>{e.Description}</p>
-            </div>
+    <>
+      {Apoiadores.tipos.map((apoiador) => (
+        <Card
+          width="360px"
+          height="330px"
+          hasBorder={true}
+          borderColor="#E0E6ED"
+          px="32px"
+          py="12px"
+          name={apoiador.Instituicao}
+          content={apoiador.Description}
+        />
+      ))}
+    </>
+    // <section className="w-[357px] h-[327px]">
+    //   {Apoiadores.tipos.map((e) => {
+    //     return (
+    //       <article>
+    //         <div>
+    //           <h1>{e.Instituicao}</h1>
+    //           <p>{e.Description}</p>
+    //         </div>
 
-            <div>
-              <img src={e.ImgUrl} className="w-24 h-24 object-fill" />
-            </div>
+    //         <div>
+    //           <img src={e.ImgUrl} className="w-24 h-24 object-fill" />
+    //         </div>
 
-            <div>
-              {e.Funcao.map((e) => {
-                return <div className="bg-blue-800">{e}</div>;
-              })}
-            </div>
-          </article>
-        );
-      })}
-    </section>
+    //         <div>
+    //           {e.Funcao.map((e) => {
+    //             return <div className="bg-blue-800">{e}</div>;
+    //           })}
+    //         </div>
+    //       </article>
+    //     );
+    //   })}
+    // </section>
   );
 }
 
