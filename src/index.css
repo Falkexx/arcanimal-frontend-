@@ -30,4 +30,11 @@
       justify-content: flex-start;
     }
   }
+
+  .BaseFont{
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+  }
 }
