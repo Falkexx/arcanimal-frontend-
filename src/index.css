@@ -14,10 +14,20 @@
     font-weight: bolder;
     font-size: medium;
   }
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .flex-custom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
 }

@@ -1,8 +1,8 @@
 import Tags from "../Tags";
 
 type CardProps = {
-  width: string;
-  height: string;
+  maxWidth: string;
+  maxHeight: string;
   bg?: string;
   hasBorder: boolean;
   borderColor?: string;
@@ -17,8 +17,8 @@ type CardProps = {
 
 const Card = ({
   bg,
-  height,
-  width,
+  maxHeight,
+  maxWidth,
   hasBorder,
   borderColor,
   px,
@@ -33,32 +33,35 @@ const Card = ({
   const bgClass = bg ? `bg-${bg}` : "bg-transparent";
 
   return (
-    <div
-      className={`${borderClass} ${bgClass} flex justify-center items-center flex-col `}
+    <a
+      href={linkUrl}
+      target="_blank"
+      rel="noreferrer"
+      className={`flex flex-col border rounded-2xl w-full hover:bg-gray-100 justify-center items-center  text-center  ${borderClass} ${bgClass} `}
       style={{
         borderColor,
         paddingLeft: `${px}`,
         paddingRight: `${px}`,
         paddingTop: `${py}`,
         paddingBottom: `${py}`,
-        maxWidth: `${width}`,
-        width: "100%",
-        maxHeight: `${height}`,
-        boxShadow: " 3px 3px 6px #0200804d",
-        borderRadius: "10px",
+        maxWidth: `${maxWidth}`,
+        maxHeight: `${maxHeight}`,
+        boxShadow: "3px 3px 6px #0200804d",
       }}
     >
-      <h2 className="mb-2 text-custom-gray text-lg font-medium">{name}</h2>
-      <p className="text-sm ">{content}</p>
-      <a href={linkUrl} target="blank" className="my-6">
-        <img src={img} alt={name} className="max-h-[100px]" />
-      </a>
-      <span>
-        {tags.map((tag) => (
-          <Tags content={[tag]} key={tag} />
-        ))}
-      </span>
-    </div>
+      <div className="justify-center items-center flex flex-col text-center">
+        <h2 className="mb-2 text-custom-gray text-lg font-medium">{name}</h2>
+        <p className="text-sm text-custom-gray ">{content}</p>
+        <div className="border m-3 p-4 rounded-lg border-border-color">
+          <img src={img} alt={name} className="max-h-[100px]" />
+        </div>
+        <span>
+          {tags.map((tag) => (
+            <Tags content={[tag]} key={tag} />
+          ))}
+        </span>
+      </div>
+    </a>
   );
 };
 

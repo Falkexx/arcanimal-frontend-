@@ -6,76 +6,76 @@ import rsGov from "../../assets/img/ApoiadoresLogos/gov.png";
 import dogGoods from "../../assets/img/ApoiadoresLogos/doggoodslogo.png";
 import Card from "../Card";
 
-function ShowPartners() {
-  const Apoiadores: PartnersProps = {
+const ShowPartners = () => {
+  const apoiadores: PartnersProps = {
     tipos: [
       {
-        Instituicao: "PETS Rio Grande do Sul",
-        Description:
+        instituition: "PETS Rio Grande do Sul",
+        description:
           "Portal criado por voluntários para ajudar no reencontro de pets.",
-        ImgUrl: petsRsLogo,
+        imgUrl: petsRsLogo,
         tag: ["Divulgação", "Conexão"],
         width: null,
         height: null,
-        LinkUrl: "https://petsrs.com.br/",
+        linkUrl: "https://petsrs.com.br/",
       },
       {
-        Instituicao: "GRAD",
-        Description:
+        instituition: "GRAD",
+        description:
           "Suporte técnico para o Estado através do Gabinete de Coordenação da Fauna.",
-        ImgUrl: gradLogo,
+        imgUrl: gradLogo,
         tag: ["Suporte técnico"],
         width: null,
         height: null,
-        LinkUrl: "https://gradbrasil.org.br/",
+        linkUrl: "https://gradbrasil.org.br/",
       },
       {
-        Instituicao: "Animal Tag",
-        Description:
+        instituition: "Animal Tag",
+        description:
           "Fornece um aplicativo para o cadastro dos animais microchipados.",
-        ImgUrl: animalTag,
+        imgUrl: animalTag,
         tag: ["Divulgação", "Conexão"],
         width: "12rem",
         height: "6rem",
-        LinkUrl: "https://www.animalltag.net/",
+        linkUrl: "https://www.animalltag.net/",
       },
       {
-        Instituicao: "Governo do Estado do RS",
-        Description:
+        instituition: "Governo do Estado do RS",
+        description:
           "Coordena o Gabinete de Coordenação da Fauna através da SEMA",
-        ImgUrl: rsGov,
+        imgUrl: rsGov,
         tag: ["Suporte técnico"],
         width: null,
         height: null,
-        LinkUrl: "https://sosenchentes.rs.gov.br/assistencia-para-animais",
+        linkUrl: "https://sosenchentes.rs.gov.br/assistencia-para-animais",
       },
       {
-        Instituicao: "Dog Goods",
-        Description: "Fabricante e Distribuidor de Petiscos para Cães e Gatos",
-        ImgUrl: dogGoods,
+        instituition: "Dog Goods",
+        description: "Fabricante e Distribuidor de Petiscos para Cães e Gatos",
+        imgUrl: dogGoods,
         width: "10rem",
         height: "6rem",
         tag: ["Doação de petiscos"],
-        LinkUrl: "https://www.doggoods.com.br/",
+        linkUrl: "https://www.doggoods.com.br/",
       },
     ],
   };
 
   return (
     <>
-      {Apoiadores.tipos.map((apoiador) => (
-        <div className="mr-4 mb-4 flex-wrap " key={apoiador.Instituicao}>
+      {apoiadores.tipos.map((apoiador) => (
+        <div className="mb-4 mt-5 mx-2 flex-wrap " key={apoiador.instituition}>
           <Card
-            width="360px"
-            height="330px"
+            maxWidth="360px"
+            maxHeight="330px"
             hasBorder={true}
             borderColor="border-border-color"
             px="12px"
             py="32px"
-            name={apoiador.Instituicao}
-            content={apoiador.Description}
-            img={apoiador.ImgUrl}
-            linkUrl={apoiador.LinkUrl}
+            name={apoiador.instituition}
+            content={apoiador.description}
+            img={apoiador.imgUrl}
+            linkUrl={apoiador.linkUrl}
             tags={apoiador.tag}
           />
         </div>
@@ -91,7 +91,7 @@ function ShowPartners() {
     //         </div>
 
     //         <div>
-    //           <img src={e.ImgUrl} className="w-24 h-24 object-fill" />
+    //           <img src={e.imgUrl} className="w-24 h-24 object-fill" />
     //         </div>
 
     //         <div>
@@ -104,6 +104,6 @@ function ShowPartners() {
     //   })}
     // </section>
   );
-}
+};
 
 export default ShowPartners;

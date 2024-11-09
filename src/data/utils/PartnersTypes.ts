@@ -1,11 +1,11 @@
 export interface PartnersDetails {
-  Instituicao: string;
-  Description: string;
-  ImgUrl: string;
+  instituition: string;
+  description: string;
+  imgUrl: string;
   width: string | null;
   height: string | null;
   tag: string[];
-  LinkUrl: string;
+  linkUrl: string;
 }
 
 export interface PartnersProps {

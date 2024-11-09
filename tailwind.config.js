@@ -2,8 +2,8 @@
 
 const tailwindConfig = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./public/index.html",
+    "./src/**/*.{js,ts,jsx,tsx,html}",
+    // "./public/index.html",
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
@@ -21,12 +21,12 @@ const tailwindConfig = {
       colors: {
         'default-blue': '#020080',
         'border-color': '#E0E6ED',
-        'custom-gray': '#3b3f5c'
+        'custom-gray': '#3b3f5c',
+        'custom-black': '#212529'
       },
     },
   },
   plugins: [
-
     require('flowbite/plugin')
   ],
 };
