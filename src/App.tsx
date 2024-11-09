@@ -1,9 +1,9 @@
-import Rota from '../src/routes/index'
+import Rota from "../src/routes/index";
 
 function app() {
-  return ( 
+  return (
     <>
-      <Rota/>
+      <Rota />
     </>
   );
 }

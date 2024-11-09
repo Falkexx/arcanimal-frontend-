@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-
+@layer utilities {
   .CredentialInputStyle {
-
     width: 100%;
     display: block;
     color: black;
@@ -15,7 +13,22 @@
   .CredentialLabelStyle {
     font-weight: bolder;
     font-size: medium;
+  }
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .flex-custom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
 
   .BaseFont{
