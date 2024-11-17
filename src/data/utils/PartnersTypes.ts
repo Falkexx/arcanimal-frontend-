@@ -1,15 +1,13 @@
-export interface PartnersDetails{
-  Instituicao: string;
-  Description: string;
-  ImgUrl: string;
+export interface PartnersDetails {
+  instituition: string;
+  description: string;
+  imgUrl: string;
   width: string | null;
   height: string | null;
-  Funcao: string[];
-  LinkUrl: string | null;
+  tag: string[];
+  linkUrl: string;
 }
 
 export interface PartnersProps {
-
   tipos: PartnersDetails[];
 }
-
