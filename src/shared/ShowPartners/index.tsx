@@ -81,28 +81,6 @@ const ShowPartners = () => {
         </div>
       ))}
     </>
-    // <section className="w-[357px] h-[327px]">
-    //   {Apoiadores.tipos.map((e) => {
-    //     return (
-    //       <article>
-    //         <div>
-    //           <h1>{e.Instituicao}</h1>
-    //           <p>{e.Description}</p>
-    //         </div>
-
-    //         <div>
-    //           <img src={e.imgUrl} className="w-24 h-24 object-fill" />
-    //         </div>
-
-    //         <div>
-    //           {e.tag.map((e) => {
-    //             return <div className="bg-blue-800">{e}</div>;
-    //           })}
-    //         </div>
-    //       </article>
-    //     );
-    //   })}
-    // </section>
   );
 };
 
