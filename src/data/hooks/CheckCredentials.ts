@@ -9,7 +9,7 @@ export function CheckIfPasswordIsCorrect(Credential:string){
   }
 
   /*Parte condicional: Você pode adicionar mais erros abaixo!*/
-  if(Credential == ''){
+  if(Credential === ''){
 
     return Errors.Error = "O campo Senha é obrigatório."
   }
@@ -25,7 +25,7 @@ export function CheckIfEmailIsCorrect(Credential:string){
   }
 
   /*Parte condicional: Você pode adicionar mais erros abaixo!*/
-  if(Credential == ''){
+  if(Credential === ''){
 
     return Errors.Error = "O campo E-mail é obrigatório."
   }
