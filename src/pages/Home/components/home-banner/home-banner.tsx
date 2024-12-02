@@ -16,30 +16,29 @@ function homerBanner() {
       <section className="flex flex-col md:flex-row sm:w-full gap-3">
         <section className="flex flex-col gap-3 p-12 border rounded shadow">
           <article>
-            <p className="BaseFont">
-              Para sua familia que deseja um novo amigo
-            </p>
+            <p>Para sua familia que deseja um novo amigo</p>
           </article>
           <Link to="/animais">
-            <span className="btn-orange text-white rounded-full px-4 py-2 text-xl h-13 flex justify-center width=[100]">
+            <a
+              target="_blank"
+              className="btn-orange text-white rounded-full px-4 py-2 text-xl h-13 flex justify-center width=[100]"
+            >
               Quero adotar
-            </span>
+            </a>
           </Link>
         </section>
         <section className="flex flex-col gap-3 p-12 border rounder shadow">
           <article>
-            <p className="fs-1 BaseFont">
-              Para você que perdeu seu animalzinho
-            </p>
+            <p className="fs-1">Para você que perdeu seu animalzinho</p>
           </article>
           <div>
-            <Link
-              to="https://petsrs.com.br/"
+            <a
+              href="https://petsrs.com.br/"
               target="_blank"
               className="bg-color text-white text-xl flex justify-center h-13 width=[100] rounded-full px-4 py-2"
             >
               Encontrar meu pet
-            </Link>
+            </a>
           </div>
         </section>
       </section>

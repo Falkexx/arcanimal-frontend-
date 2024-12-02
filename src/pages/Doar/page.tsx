@@ -10,7 +10,9 @@ function page() {
         {/*Sessão falando sobre a Grad */}
         <section className=" w-full flex flex-col gap-14 md:flex-row w-full items-center my-10">
           <article className=" w-full md:w-2/4 flex flex-col gap-4">
-            <h1 className="font-bold text-black md:text-4xl text-2xl">Ajude a Grad</h1>
+            <h1 className="font-bold text-black md:text-4xl text-2xl">
+              Ajude a Grad
+            </h1>
             <p className="leading-6">
               O Grupo de Resposta a Animais em Desastres (GRAD) é um grupo de
               voluntários composto por mais de 80 membros, de diferentes áreas
@@ -29,7 +31,7 @@ function page() {
 
         {/*Sessão de QRCode */}
         <section>
-            <ShowGraadQRCode/>
+          <ShowGraadQRCode />
         </section>
       </section>
     </>

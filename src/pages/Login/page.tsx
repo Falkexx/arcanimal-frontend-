@@ -5,7 +5,6 @@ function page() {
   return (
     <>
       <Navbar />
-
       <section className="w-full h-[90vh] justify-center flex flex-col items-center ">
         <section className="w-2/4">
           <article className="flex flex-col gap-2 my-4 ">
