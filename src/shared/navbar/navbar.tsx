@@ -13,8 +13,8 @@ function Navbar() {
   function logout() {}
 
   return (
-    <header className="Header w-full px-6 py-4 bg-white shadow-md z-10 BaseFont">
-      <nav className="flex justify-between items-center w-full">
+    <header className=" px-6 py-4 bg-white shadow-md z-10 BaseFont">
+      <nav className="flex justify-between items-center w-full ">
         {/* LOGO */}
         <section className="flex gap-2 items-center">
           <Link to="/">
