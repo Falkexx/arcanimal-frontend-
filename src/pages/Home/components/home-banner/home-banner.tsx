@@ -1,5 +1,5 @@
 import "./home-banner.scss";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function homerBanner() {
   return (
@@ -35,8 +35,7 @@ function homerBanner() {
             <a
               href="https://petsrs.com.br/"
               target="_blank"
-              rel="noreferrer"
-              className="bg-color items-center text-center text-white text-xl flex justify-center h-13 width=[100] rounded-full px-4 py-2"
+              className="bg-color text-white text-xl flex justify-center h-13 width=[100] rounded-full px-4 py-2"
             >
               Encontrar meu pet
             </a>
