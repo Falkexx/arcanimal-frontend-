@@ -13,9 +13,9 @@ function Footer() {
       <img className="w-full" alt="Footer" src={footerImg} />
       <img className="w-44 mx-auto mt-4 mb-10 " alt="Logo" src={logo} />
 
-      <div className="flex justify-between items-end px-2 md:px-28 xl:px-40">
+      <div className="flex justify-between items-end lg:items-center  px-2 md:px-28 xl:px-40">
         <img alt="Selo da organização" src={organizationImg} />
-        <div className="flex mb-4 ml-2">
+        <div className="flex mb-4 lg:mb-0 ml-2">
           <a href="https://www.facebook.com/profile.php?id=61559172705930">
             <img className="w-6" alt="Facebook" src={facebookIcon} />
           </a>

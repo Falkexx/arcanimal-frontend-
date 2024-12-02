@@ -4,7 +4,6 @@ import ShowPartners from "../../shared/ShowPartners";
 const Apoiadores = () => {
   return (
     <>
-      <Navbar />
       <div>
         <div className="md:px-4 lg:px-container">
           <h1 className="font-medium leading-10 text-2xl-custom text-default-blue">
